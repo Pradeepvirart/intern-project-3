@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .product {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .product-image img {
+            max-width: 300px;
+            border-radius: 8px;
+        }
+        .product-details {
+            max-width: 500px;
+        }
+        .product-details h1 {
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 22px;
+            color: #e67e22;
+            font-weight: bold;
+        }
+        .add-to-cart {
+            background: #e67e22;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .cart {
+            margin-top: 40px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .cart h2 {
+            margin-bottom: 10px;
+        }
+        .cart-items {
+            list-style: none;
+            padding: 0;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="products">
+            <div class="product" data-name="Rc car" data-price="49.99">
+                <div class="product-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQzXZF0-6V7MPa3hGWl_LtShRfXWwx4wvZ1dBrZ3s6WEb87SJL2xwuRatAeZ2guCxnONgjbCQ0tfC-e95RtKw11QO-mX_OWVCiMMqvx2pSV8yYPxXhL_6LyMw&usqp=CAE">
+                </div>
+                <div class="product-details">
+                    <h1>Rc car</h1>
+                    <p class="description">high speed car with brush less motor.</p>
+                    <p class="price">$49.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product" data-name="Die cast (porsche)" data-price="59.99">
+                <div class="product-image">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTEfijnuzauhguUtTHYHFkITGLvSfrdL71A4gtkK7S3sTTVBlGWgR8EMmt7gYLEr6nPLElI9owH9bjB-dBqnCHZofVdtQLVi3deWkPg2fOA29ar0vP5VC7EPA&usqp=CAE" alt="Product 2">
+                </div>
+                <div class="product-details">
+                    <h1>Die cast (porsche)</h1>
+                    <p class="description">metal collectable edition</p>
+                    <p class="price">$59.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product" data-name="Rc helicopte" data-price="69.99">
+                <div class="product-image">
+                    <img src="https://m.media-amazon.com/images/I/41sbEADsdVL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 3">
+                </div>
+                <div class="product-details">
+                    <h1>Rc helicopter</h1>
+                    <p class="description">colour:-red,flytime 15 min</p>
+                    <p class="price">$69.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product" data-name="Rc ship" data-price="79.99">
+                <div class="product-image">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT0QTIg_78z308KhWXXJrnV4xR65pyY9cCLAWtvJJWtGbPyrLkx3hrz5ihOuIcwWyOk0hlavRAwklGSV8Gr_yG4_R_ucITlU7gWp6X_JPc&usqp=CAE" alt="Product 4">
+                </div>
+                <div class="product-details">
+                    <h1>Rc ship</h1>
+                    <p class="description">colour:- blue, speed 14kmp</p>
+                    <p class="price">$79.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product" data-name="Rc ship 2" data-price="89.99">
+                <div class="product-image">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTI2MEoyI5YRQKTMtRa5XxHmNX9KDcYRSpl0vvq8bY-bYqHbrFQL5tJ-uL-dOCFe6rVmYb6zEQfrH_KKP-OXYvCmMGnsRZd7Q&usqp=CAE" alt="Product 5">
+                </div>
+                <div class="product-details">
+                    <h1>Rc ship 2</h1>
+                    <p class="description">high speed edition</p>
+                    <p class="price">$89.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cart">
+            <h2>Shopping Cart</h2>
+            <ul class="cart-items"></ul>
+        </section>
+    </main>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const cartItemsContainer = document.querySelector(".cart-items");
+            const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener("click", function() {
+                    const product = this.closest(".product");
+                    const name = product.getAttribute("data-name");
+                    const price = product.getAttribute("data-price");
+                    
+                    const cartItem = document.createElement("li");
+                    cartItem.classList.add("cart-item");
+                    cartItem.innerHTML = `<span>${name} - $${price}</span>`;
+                    cartItemsContainer.appendChild(cartItem);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
